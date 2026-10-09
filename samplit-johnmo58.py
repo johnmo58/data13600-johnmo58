@@ -1,3 +1,4 @@
+# Feature branch: sample about 1% of lines from a file
 import sys
 import random
 
@@ -7,4 +8,3 @@ with open(filename) as f:
     for line in f:
         if random.random() < 0.01:
             print(line, end="")
-            
